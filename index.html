@@ -7,11 +7,17 @@
     <title>Built.at</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --cta: rgba(26, 156, 231, 1)  /* Fully opaque */;
+            --cta-hover: rgba(26, 156, 231, 0.9)  /* Slightly transparent */;
+            --code: rgba(26, 156, 231, 0.1);
+        }
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
             padding: 0px;
+            font-size: 22px;
         }
 
         .navbar {
@@ -19,15 +25,18 @@
             top: 0;
             width: 100%;
             padding: 15px 20px;
-            background-color: black;
+            background-color: #2d2d2d;
             color: white;
             transition: background-color 0.3s, color 0.3s;
             font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         .navbar.scrolled {
             background-color: white;
             color: black;
+            
+            
         }
 
         .content {
@@ -51,14 +60,52 @@
             color: #000000;
             text-decoration: underline;
         }
-    </style>
+        
+    code {
+        font-family: 'Courier New', monospace;
+        background-color: var(--code);
+        padding: 4px 6px;
+        border-radius: 4px;
+        font-size: 0.95em;
+    }
+
+    .cta-button {
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.0rem;
+    text-align: center;
+    background-color: var(--cta);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--cta-hover);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+</style>
+
 </head>
 <body>
     <div class="navbar" id="navbar">Built.at</div>
     <div class="content">
         
         
-        <h3>Build whatever you want on the web. Get a link to it. `Built.at/your-github-username` All we are is a name. We run on Cloudflare and Github.</h3>
+        <h3>Your GitHub, Your Website — Seconds to Setup</h3>  
+<p>Create a <code>built.at</code> GitHub repo to build a live website at <code>built.at/your-github-username</code>  
+Whatever is in your repo shows up. It works with or without GitHub Pages.</p>  
+
+<h3>Build What You Want</h3>  
+<p>A portfolio? A blog? A digital playground? If your repo has an <code>index.html</code>,  
+it just works. No need to mess under the hood.</p>  
+
+<h3>Fast, Free, and Magical (thanks Cloudflare and GitHub)</h3>  
+<p>We are just a catchy name you can attach your content to. You do the creating. <a class="cta-button" href="https://github.com/new?template_name=built.at&template_owner=builtat&name=built.at">Build your repo</a></p> 
     </div>
 
     <script>
@@ -73,3 +120,4 @@
     </script>
 </body>
 </html>
+
