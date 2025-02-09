@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Built.at</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
@@ -13,6 +13,10 @@
             --cta: rgba(26, 156, 231, 1)  /* Fully opaque */;
             --cta-hover: rgba(26, 156, 231, 0.9)  /* Slightly transparent */;
             --code: rgba(26, 156, 231, 0.1);
+            
+            --charcoal: #2d2d2d;
+            --nav: #1a9ce74d;
+            --icon: rgba(26, 156, 231, 0.6);
         }
         body {
             margin: 0;
@@ -27,16 +31,18 @@
             top: 0;
             width: 100%;
             padding: 15px 20px;
-            background-color: #2d2d2d;
-            color: white;
+            background-color: var(--cta);
+            color: rgb(255, 255, 255);
             transition: background-color 0.3s, color 0.3s;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 30px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
         }
 
         .navbar.scrolled {
-            background-color: white;
-            color: black;
+            background-color: var(--charcoal);
+            color: rgb(255, 255, 255);
             
             
         }
@@ -93,7 +99,7 @@
 .icon {
     vertical-align: middle;
     font-size: 24px;
-    color: #4285F4; /* Google Blue */
+    color: var(--icon); /* Google Blue */
     position: relative;
     font-weight: bold;
     top: 0px; /* Adjust this value as needed */
@@ -124,8 +130,8 @@ it just works. No messing under the hood.</p>
 <h3>Fast, Free, and Magical (thanks to <a href="https://cloudflare.com">Cloudflare</a> and <a href="https://github.com">GitHub</a>)</h3>  
 <p>We give you your name that connects to your code. You do the creating. <a class="cta-button" href="https://github.com/new?template_name=built.at&template_owner=builtat&name=built.at">Let's build your repo</a></p> 
   
-<h3>See What It Looks Like</h3>  
-<p>The Built.at template repo: <a href="https://github.com/builtat/built.at">github.com/builtat/built.at</a></p> 
+<h3>Check It Out</h3>  
+<p>The barebones Built.at template repo: <a href="https://github.com/builtat/built.at">github.com/builtat/built.at</a></p> 
 <p>Example built.at profile: <a href="https://built.at/aididthis">built.at/AIdidTHIS</a></p> 
 
 <h3>Contact Us</h3>  
