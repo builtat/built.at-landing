@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Built.at</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+
 
     <style>
       :root {
@@ -90,7 +88,7 @@
         color: white;
         text-decoration: none;
         border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
         transition: background-color 0.3s, box-shadow 0.3s;
       }
 
@@ -98,53 +96,95 @@
         background-color: var(--cta-hover);
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
       }
-      .icon {
+      .icon1 {
         vertical-align: middle;
-        font-size: 24px;
+        font-size: 45px;
         color: var(--icon); /* Google Blue */
         position: relative;
         font-weight: bold;
         top: 0px; /* Adjust this value as needed */
       }
+      .icon2 {
+        vertical-align: middle;
+        font-size: 20px;
+        color: black; /* Google Blue */
+        position: relative;
+        
+        top: 0px; /* Adjust this value as needed */
+      }
+
+      .icon3 {
+        vertical-align: middle;
+        font-size: 20px;
+        color: black; /* Google Blue */
+        position: relative;
+        font-weight: bold;
+        top: 0px; /* Adjust this value as needed */
+      }
+      .icon-white {
+        vertical-align: middle;
+        font-size: 25px;
+        color: rgb(255, 255, 255); /* Google Blue */
+        position: relative;
+        font-weight: bold;
+        top: -2px; /* Adjust this value as needed */
+      }
+      .icon-schedule {
+        vertical-align: middle;
+        font-size: 25px;
+        color: rgb(0, 0, 0); /* Google Blue */
+        position: relative;
+        font-weight: bold;
+        top: -2px; /* Adjust this value as needed */
+        margin-right:5px;
+      }
+      .small {
+        font-size: 0.7em;
+        color: gray;
+      }
+      .blue {
+        color: var(--icon);
+      }
+      /* .bold {
+        font-weight: 900;
+      } */
     </style>
   </head>
   <body>
     <div class="navbar" id="navbar">Built.at</div>
     <div class="content">
       <h3>
-        Built.at
-        <span class="material-icons icon">arrow_forward</span>
-        GitHub
-        <span class="material-icons icon">arrow_forward</span>
-        Website — in seconds
+        built.at/you <span class="blue">+</span> GitHub <span class="blue">=</span> <code>free</code> custom website 
       </h3>
+      <p class="small"><span class="material-icons icon2">person</span> Need a GitHub account? <a href="https://github.com/join">Sign Up First</a></p>
+      <h3><code><span class="material-icons icon-schedule">schedule</span>2 minutes to launch</code></h3>
       <p>
-        Create a <code>built.at</code> GitHub repository to display a live
-        website at <code>built.at/your-github-username</code>. Works with or
+        You will create a <code>built.at</code> GitHub repository to display a live
+        website at <code>built.at/your-github-username</code>. It functions with or
         without GitHub Pages.
       </p>
 
-      <h3>Share What You Want</h3>
+      <h3><span class="material-icons icon2">check</span> Share anything</h3>
       <p>
-        Portfolio? Blog? Digital playground? If your repo has an
-        <code>index.html</code>, you're all set. No messing under the hood.
+        Landing page, portfolio, blog, notes, links - with
+        <code>index.html</code> as your source.
       </p>
 
-      <h3>
-        Fast, Free, and Magical (thanks to
-        <a href="https://cloudflare.com">Cloudflare</a> and
-        <a href="https://github.com">GitHub</a>)
-      </h3>
       <p>
-        We connect your username to your code. You're the designer.
+        <b>Fast, Free, and Magical</b> - thanks to
+        <a href="https://cloudflare.com">Cloudflare</a> and
+        <a href="https://github.com">GitHub</a>
+      </p>
+      <p>
+        
         <a
           class="cta-button"
           href="https://github.com/new?template_name=built.at&template_owner=builtat&name=built.at"
-          >Start Building</a
+          ><span class="material-icons icon-white">arrow_forward</span> BUILD REPO</a
         >
       </p>
 
-      <h3>Look Before You Leap</h3>
+      <h3><span class="material-icons icon2">link</span> Links</h3>
       <p>
         Repo template:
         <a href="https://github.com/builtat/built.at"
@@ -153,10 +193,11 @@
       </p>
       <p>
         Example profile:
-        <a href="https://built.at/aididthis">built.at/AIdidTHIS</a>
+        <a href="https://built.at/aididthis">built.at/aididthis</a>
       </p>
+      <p>Alternatively, it works to manually create a new repo called 'built.at' but it's more fun to clone it with the link above.</p>
 
-      <h3>Contact</h3>
+      <h3><span class="material-icons icon2">mail</span> Send your thoughts</h3>
       <p>hello [at] built.at</p>
     </div>
   </body>
