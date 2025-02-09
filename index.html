@@ -1,160 +1,163 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Built.at</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <style>
-        :root {
-            --cta: rgba(26, 156, 231, 1)  /* Fully opaque */;
-            --cta-hover: rgba(26, 156, 231, 0.9)  /* Slightly transparent */;
-            --nav: rgba(26, 156, 231, 0.7);
-            --code: rgba(26, 156, 231, 0.1);
-            --cta-scroll: rgba(26, 156, 231, 1);
-            --charcoal: #2d2d2d;
-            
-            --icon: rgba(26, 156, 231, 0.6);
-        }
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            padding: 0px;
-            font-size: 22px;
-        }
+      :root {
+        --cta: rgba(26, 156, 231, 1) /* Fully opaque */;
+        --cta-hover: rgba(26, 156, 231, 0.9) /* Slightly transparent */;
+        --nav: rgba(26, 156, 231, 1);
+        --code: rgba(26, 156, 231, 0.1);
+        --charcoal: #2d2d2d;
 
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 15px 20px;
-            background-color: var(--nav);
-            color: rgb(255, 255, 255);
-            transition: background-color 0.3s, color 0.3s;
-            font-weight: 700;
-            font-size: 30px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-        }
+        --icon: rgba(26, 156, 231, 0.6);
+      }
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        line-height: 1.6;
+        padding: 0px;
+        font-size: 22px;
+      }
 
-        .navbar.scrolled {
-            background-color: var(--cta-scroll);
-            color: rgb(255, 255, 255);
-            
-            
-        }
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 15px 20px;
+        background-color: var(--nav);
+        color: rgb(255, 255, 255);
+        transition: background-color 0.3s, color 0.3s;
+        font-weight: 700;
+        font-size: 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+      }
 
-        .content {
-            padding-top: 80px;
-            height: 200vh;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
 
-        h1, h3 {
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
+      .content {
+        padding-top: 80px;
+        /* height: 100vh; */
+        margin-left: 20px;
+        margin-right: 20px;
+      }
 
-        p {
-            font-weight: 300;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        a {
-            color: #000000;
-            text-decoration: underline;
-        }
-        
-    code {
-        font-family: 'Courier New', monospace;
+      h1,
+      h3 {
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-weight: 300;
+        color: #333;
+        margin-bottom: 20px;
+      }
+      a {
+        color: #000000;
+        text-decoration: underline;
+      }
+
+      code {
+        font-family: "Courier New", monospace;
         background-color: var(--code);
         padding: 4px 6px;
         border-radius: 4px;
-        font-size: 1.0em;
+        font-size: 1em;
         font-weight: bold;
-    }
+      }
 
-    .cta-button {
-    display: block;
-    width: fit-content;
-    margin-top: 20px;
-    padding: 15px 30px;
-    font-size: 1.0rem;
-    text-align: center;
-    background-color: var(--cta);
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
+      .cta-button {
+        display: block;
+        width: fit-content;
+        margin-top: 20px;
+        padding: 15px 30px;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        background-color: var(--cta);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s, box-shadow 0.3s;
+      }
 
-.cta-button:hover {
-    background-color: var(--cta-hover);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-.icon {
-    vertical-align: middle;
-    font-size: 24px;
-    color: var(--icon); /* Google Blue */
-    position: relative;
-    font-weight: bold;
-    top: 0px; /* Adjust this value as needed */
-}
-
-</style>
-
-</head>
-<body>
+      .cta-button:hover {
+        background-color: var(--cta-hover);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
+      .icon {
+        vertical-align: middle;
+        font-size: 24px;
+        color: var(--icon); /* Google Blue */
+        position: relative;
+        font-weight: bold;
+        top: 0px; /* Adjust this value as needed */
+      }
+    </style>
+  </head>
+  <body>
     <div class="navbar" id="navbar">Built.at</div>
     <div class="content">
-        
-        
-        <h3>
-            Built.at
-            <span class="material-icons icon">arrow_forward</span>
-            GitHub
-            <span class="material-icons icon">arrow_forward</span>
-            Website — in seconds
-        </h3>
-<p>Create a <code>built.at</code> GitHub repository to display a live website at <code>built.at/your-github-username</code>.  
-Works with or without GitHub Pages.</p>  
+      <h3>
+        Built.at
+        <span class="material-icons icon">arrow_forward</span>
+        GitHub
+        <span class="material-icons icon">arrow_forward</span>
+        Website — in seconds
+      </h3>
+      <p>
+        Create a <code>built.at</code> GitHub repository to display a live
+        website at <code>built.at/your-github-username</code>. Works with or
+        without GitHub Pages.
+      </p>
 
-<h3>Share What You Want</h3>  
-<p>Portfolio? Blog? Digital playground? If your repo has an <code>index.html</code>,  
-you're all set. No messing under the hood.</p>  
+      <h3>Share What You Want</h3>
+      <p>
+        Portfolio? Blog? Digital playground? If your repo has an
+        <code>index.html</code>, you're all set. No messing under the hood.
+      </p>
 
-<h3>Fast, Free, and Magical (thanks to <a href="https://cloudflare.com">Cloudflare</a> and <a href="https://github.com">GitHub</a>)</h3>  
-<p>We connect your username to your code. You're the designer. <a class="cta-button" href="https://github.com/new?template_name=built.at&template_owner=builtat&name=built.at">Create the repo to connect</a></p> 
-  
-<h3>Look Before You Leap</h3>  
-<p>Repo template: <a href="https://github.com/builtat/built.at">github.com/builtat/built.at</a></p> 
-<p>Example profile: <a href="https://built.at/aididthis">built.at/AIdidTHIS</a></p> 
+      <h3>
+        Fast, Free, and Magical (thanks to
+        <a href="https://cloudflare.com">Cloudflare</a> and
+        <a href="https://github.com">GitHub</a>)
+      </h3>
+      <p>
+        We connect your username to your code. You're the designer.
+        <a
+          class="cta-button"
+          href="https://github.com/new?template_name=built.at&template_owner=builtat&name=built.at"
+          >Start Building</a
+        >
+      </p>
 
-<h3>Contact</h3>  
-<p>hello [at] built.at</p>  
+      <h3>Look Before You Leap</h3>
+      <p>
+        Repo template:
+        <a href="https://github.com/builtat/built.at"
+          >github.com/builtat/built.at</a
+        >
+      </p>
+      <p>
+        Example profile:
+        <a href="https://built.at/aididthis">built.at/AIdidTHIS</a>
+      </p>
 
-
-
-
-
-</div>
-
-    <script>
-        window.addEventListener("scroll", function() {
-            var navbar = document.getElementById("navbar");
-            if (window.scrollY > 50) {
-                navbar.classList.add("scrolled");
-            } else {
-                navbar.classList.remove("scrolled");
-            }
-        });
-    </script>
-</body>
+      <h3>Contact</h3>
+      <p>hello [at] built.at</p>
+    </div>
+  </body>
 </html>
-
